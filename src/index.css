@@ -1,0 +1,69 @@
+:root {
+  --text-scale: 1;
+  --font-sans: Inter, ui-rounded, "SF Pro Rounded", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --surface-app: #f8f6f1;
+  --surface-raised: #fffefa;
+  --surface-subtle: #f3f1eb;
+  --text-strong: #272a27;
+  --text-muted: #777972;
+  --text-faint: #9c9d96;
+  --border: #dcdad2;
+  --border-soft: #e9e6df;
+  --brand: #526858;
+  --brand-soft: #e8eee8;
+  --mint-strong: #4d967b;
+  --positive: #3d8a6e;
+  --mint-soft: #e1f2eb;
+  --peach-soft: #fae9df;
+  --blue-soft: #e4edf2;
+  --violet-soft: #eee7f1;
+  --danger: #b85d57;
+  --danger-soft: #f8e8e6;
+  --shadow-subtle: 0 8px 28px rgba(70, 62, 51, .055);
+  font-family: var(--font-sans);
+  color: var(--text-strong);
+  background: #eae7e0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-text-scale='large'] { --text-scale: 1.16; }
+:root[data-text-scale='xlarge'] { --text-scale: 1.32; }
+
+* { box-sizing: border-box; }
+html { background: #eae7e0; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, textarea, select { font: inherit; }
+
+:root[data-theme='dark'] {
+    --surface-app: #171a18;
+    --surface-raised: #202421;
+    --surface-subtle: #282d29;
+    --text-strong: #f1f0eb;
+    --text-muted: #a7aaa3;
+    --text-faint: #858a83;
+    --border: #3b403b;
+    --border-soft: #2e332f;
+    --brand: #9db9a3;
+    --brand-soft: #29362d;
+    --mint-soft: #203c32;
+    --peach-soft: #432f27;
+    --blue-soft: #23353f;
+    --violet-soft: #352d3a;
+    --danger-soft: #402927;
+    --shadow-subtle: 0 8px 28px rgba(0, 0, 0, .18);
+    background: #101210;
+}
+
+:root[data-theme='dark'] body { background: #101210; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

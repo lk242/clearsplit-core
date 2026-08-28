@@ -1,0 +1,19 @@
+.handoff-shell { min-height: 100dvh; }
+.handoff-page { width: min(100%, 640px); margin: 0 auto; padding: 34px 20px 48px; }
+.handoff-hero { display: grid; justify-items: center; text-align: center; }
+.handoff-check { width: 64px; height: 64px; margin-bottom: 18px; border-radius: 22px; display: grid; place-items: center; color: #fff; background: var(--positive); box-shadow: 0 14px 30px color-mix(in srgb, var(--positive) 28%, transparent); }
+.handoff-hero p { margin: 0 0 8px; color: var(--positive); font-size: calc(11px * var(--text-scale)); font-weight: 850; letter-spacing: .12em; }
+.handoff-hero h1 { margin: 0; font-size: clamp(27px, 8vw, 38px); letter-spacing: -.04em; }
+.handoff-hero > span:last-child { max-width: 420px; margin-top: 12px; color: var(--text-muted); font-size: calc(12px * var(--text-scale)); line-height: 1.7; }
+.handoff-card { margin-top: 28px; padding: 4px 18px; border: 1px solid var(--border-soft); border-radius: 22px; background: var(--surface-raised); box-shadow: var(--shadow-subtle); }
+.handoff-card > div { min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--border-soft); }
+.handoff-card > div:last-child { border-bottom: 0; }
+.handoff-card span, .handoff-members span { color: var(--text-muted); font-size: calc(10px * var(--text-scale)); }
+.handoff-card strong { text-align: right; font-size: calc(13px * var(--text-scale)); }
+.handoff-members { margin-top: 14px; display: grid; gap: 8px; }
+.handoff-members article { min-height: 66px; padding: 10px 14px; border: 1px solid var(--border-soft); border-radius: 18px; display: flex; align-items: center; gap: 11px; background: var(--surface-raised); }
+.handoff-members article > div { min-width: 0; margin-right: auto; display: grid; gap: 3px; }
+.handoff-members strong { font-size: calc(13px * var(--text-scale)); }
+.handoff-members article > svg { color: var(--positive); }
+.handoff-guidance { margin: 16px 0; padding: 14px; border-radius: 16px; display: flex; align-items: flex-start; gap: 10px; color: var(--warning, #9a6700); background: color-mix(in srgb, #f4b942 13%, var(--surface-raised)); font-size: calc(11px * var(--text-scale)); line-height: 1.65; }
+.handoff-guidance svg { flex: 0 0 auto; margin-top: 1px; }

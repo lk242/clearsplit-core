@@ -1,0 +1,11 @@
+[functions.line-webhook]
+verify_jwt = false
+
+[functions.line-member]
+verify_jwt = false
+
+[functions.telegram-webhook]
+verify_jwt = false
+
+[functions.discord-webhook]
+verify_jwt = false

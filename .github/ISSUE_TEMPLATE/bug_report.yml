@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible ClearSplit defect. Use private vulnerability reporting for security issues.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste tokens, webhook secrets, personal data, or real ledger exports.
+  - type: input
+    id: revision
+    attributes:
+      label: Revision
+      description: Commit SHA or release tag.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Web app, PostgreSQL/RPC, LINE, Discord, Telegram, PWA, Documentation]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction
+      description: Minimal steps using non-sensitive fixture data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Verification already run
+      description: Include relevant test, lint, build, SQL, browser, and provider results.

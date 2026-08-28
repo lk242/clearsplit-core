@@ -1,0 +1,16 @@
+.ledger-danger-zone { margin-top: 16px; padding: 16px; border: 1px solid color-mix(in srgb, var(--danger) 25%, var(--border-soft)); border-radius: 20px; background: var(--surface-raised); display: flex; align-items: center; gap: 14px; }
+.ledger-danger-zone > div { min-width: 0; margin-right: auto; display: grid; gap: 3px; }
+.ledger-danger-zone span { color: var(--danger); font-size: calc(9px * var(--text-scale)); font-weight: 800; }
+.ledger-danger-zone strong { font-size: calc(13px * var(--text-scale)); }
+.ledger-danger-zone small { color: var(--text-muted); font-size: calc(9px * var(--text-scale)); line-height: 1.45; }
+.danger-outline-button { min-height: 38px; padding: 0 11px; border: 1px solid color-mix(in srgb, var(--danger) 45%, var(--border)); border-radius: 12px; color: var(--danger); background: transparent; display: inline-flex; align-items: center; gap: 6px; font-size: calc(10px * var(--text-scale)); font-weight: 750; white-space: nowrap; }
+.ledger-delete-sheet { display: grid; gap: 15px; }
+.ledger-delete-counts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ledger-delete-counts div { padding: 13px; border-radius: 14px; background: var(--surface-subtle); display: flex; align-items: center; justify-content: space-between; }
+.ledger-delete-counts span { color: var(--text-muted); font-size: calc(10px * var(--text-scale)); }
+.ledger-delete-counts strong { font-size: calc(17px * var(--text-scale)); }
+.ledger-delete-warning { padding: 12px; border-radius: 13px; color: var(--danger); background: var(--danger-soft); display: flex; align-items: flex-start; gap: 8px; font-size: calc(10px * var(--text-scale)); line-height: 1.5; }
+.ledger-delete-check { display: flex; align-items: center; gap: 9px; color: var(--text-muted); font-size: calc(10px * var(--text-scale)); }
+.ledger-delete-check input { width: 17px; height: 17px; accent-color: var(--danger); }
+.ledger-delete-sheet .line-error { margin: 0; }
+@media (max-width: 390px) { .ledger-danger-zone { align-items: stretch; flex-direction: column; } .danger-outline-button { justify-content: center; } }

@@ -1,0 +1,98 @@
+.settlement-page { display: grid; gap: 16px; }
+.settlement-tabs { display: grid; grid-template-columns: 1fr 1fr; padding: 3px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--surface-subtle); }
+.settlement-tabs button { min-height: 43px; border: 0; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; color: var(--text-muted); background: transparent; font-size: calc(11px * var(--text-scale)); font-weight: 750; }
+.settlement-tabs button.is-active { color: var(--text-strong); background: var(--surface-raised); box-shadow: var(--shadow-subtle); }
+.settlement-alert { min-height: 42px; padding: 10px 12px; border: 1px solid color-mix(in srgb, var(--positive) 28%, var(--border)); border-radius: 8px; display: flex; align-items: center; gap: 8px; color: var(--positive); background: var(--mint-soft); font-size: calc(11px * var(--text-scale)); font-weight: 650; }
+.settlement-alert.is-error { border-color: color-mix(in srgb, var(--danger) 30%, var(--border)); color: var(--danger); background: var(--danger-soft); }
+.settlement-loading { min-height: 120px; display: grid; place-items: center; color: var(--text-muted); font-size: calc(11px * var(--text-scale)); }
+.public-settlement, .private-settlement { display: grid; gap: 20px; }
+.settlement-balance-band { min-height: 126px; padding: 18px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--surface-raised); display: grid; grid-template-columns: 1fr auto; gap: 13px 20px; position: relative; }
+.settlement-balance-band > div { display: grid; gap: 5px; align-content: start; }
+.settlement-balance-band > div span { color: var(--text-muted); font-size: calc(10px * var(--text-scale)); }
+.settlement-balance-band > div strong { font-size: calc(28px * var(--text-scale)); letter-spacing: 0; }
+.settlement-balance-band dl { margin: 0; display: grid; align-content: end; gap: 6px; }
+.settlement-balance-band dl div { display: flex; justify-content: space-between; gap: 16px; }
+.settlement-balance-band dt, .settlement-balance-band dd { margin: 0; font-size: calc(10px * var(--text-scale)); }
+.settlement-balance-band dt { color: var(--text-muted); }
+.settlement-balance-band dd { font-weight: 750; }
+.fund-cycle-status { position: absolute; top: 14px; right: 14px; min-height: 24px; padding: 0 8px; border-radius: 999px; display: inline-flex; align-items: center; color: var(--brand); background: var(--brand-soft); font-size: calc(9px * var(--text-scale)); font-weight: 750; }
+.fund-cycle-status.is-closing { color: var(--danger); background: var(--danger-soft); }
+.fund-cycle-status.is-closed { color: var(--positive); background: var(--mint-soft); }
+.settlement-task-list { display: grid; gap: 9px; }
+.settlement-task-card { padding: 13px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--surface-raised); }
+.settlement-task-card > header { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.settlement-task-card > header > div { min-width: 0; display: grid; gap: 3px; }
+.settlement-task-card > header strong { font-size: calc(12px * var(--text-scale)); }
+.settlement-task-card > header span { color: var(--text-muted); font-size: calc(9px * var(--text-scale)); }
+.settlement-task-card > header > strong { flex: 0 0 auto; font-size: calc(13px * var(--text-scale)); }
+.advance-member-correction { margin-top: 10px; padding: 9px; border: 1px solid color-mix(in srgb, var(--brand) 24%, var(--border-soft)); border-radius: 7px; display: grid; gap: 7px; background: color-mix(in srgb, var(--brand) 5%, var(--surface-raised)); }
+.advance-member-correction > span { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; color: var(--text-strong); font-size: calc(9px * var(--text-scale)); font-weight: 750; }
+.advance-member-correction small { color: var(--text-muted); font-size: calc(8px * var(--text-scale)); font-weight: 500; }
+.advance-member-correction .text-input { min-height: 36px; }
+.task-warning { margin: 9px 0 0; padding: 8px 10px; border-radius: 6px; color: var(--danger); background: var(--danger-soft); font-size: calc(9px * var(--text-scale)); line-height: 1.45; }
+.closeout-breakdown { margin: 10px 0 0; padding: 9px 10px; border: 1px solid var(--border-soft); border-radius: 7px; background: var(--surface-subtle); display: grid; gap: 5px; }
+.closeout-breakdown div { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.closeout-breakdown dt, .closeout-breakdown dd { margin: 0; color: var(--text-muted); font-size: calc(8px * var(--text-scale)); }
+.closeout-breakdown dd { font-weight: 700; }
+.closeout-breakdown .is-net { margin-top: 2px; padding-top: 6px; border-top: 1px solid var(--border-soft); }
+.closeout-breakdown .is-net dt, .closeout-breakdown .is-net dd { color: var(--text-strong); font-size: calc(9px * var(--text-scale)); }
+.dual-confirmation-grid { margin-top: 11px; display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+.settlement-confirm-button { min-width: 0; min-height: 66px; padding: 9px; border: 1px solid var(--border-soft); border-radius: 7px; color: var(--text-strong); background: var(--surface-subtle); display: grid; align-content: space-between; gap: 7px; text-align: left; }
+.settlement-confirm-button > span { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: calc(9px * var(--text-scale)); font-weight: 750; }
+.settlement-confirm-button small { overflow: hidden; text-overflow: ellipsis; color: var(--text-muted); font-size: calc(8px * var(--text-scale)); line-height: 1.4; white-space: nowrap; }
+.settlement-confirm-button.is-payment { border-color: color-mix(in srgb, var(--danger) 46%, var(--border)); color: var(--danger); background: var(--danger-soft); }
+.settlement-confirm-button.is-payment.is-confirmed { border: 2px solid var(--danger); color: var(--danger); background: transparent; box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--danger) 12%, transparent); }
+.settlement-confirm-button.is-receipt { border-color: color-mix(in srgb, var(--positive) 42%, var(--border)); color: var(--positive); background: var(--mint-soft); }
+.settlement-confirm-button.is-receipt.is-confirmed { border: 2px solid var(--positive); color: var(--positive); background: transparent; box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--positive) 10%, transparent); }
+.settlement-confirm-button.is-neutral { border-color: color-mix(in srgb, var(--brand) 38%, var(--border)); color: var(--brand); background: var(--brand-soft); }
+.settlement-confirm-button.is-neutral.is-confirmed { border: 2px solid var(--brand); background: transparent; }
+.settlement-confirm-button:disabled { opacity: .6; cursor: default; }
+.settlement-confirm-button.is-confirmed:disabled { opacity: .9; }
+.closeout-start-panel { padding: 14px; border: 1px solid var(--border-soft); border-radius: 8px; display: flex; align-items: center; justify-content: space-between; gap: 12px; background: var(--surface-subtle); }
+.closeout-start-panel > div { min-width: 0; display: grid; gap: 4px; }
+.closeout-start-panel strong { font-size: calc(11px * var(--text-scale)); }
+.closeout-start-panel span, .closeout-start-panel small { color: var(--text-muted); font-size: calc(9px * var(--text-scale)); line-height: 1.45; }
+.closeout-start-panel button { flex: 0 0 auto; }
+.settlement-complete-state { min-height: 64px; padding: 13px; border: 1px solid color-mix(in srgb, var(--positive) 28%, var(--border)); border-radius: 8px; display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--positive); background: var(--mint-soft); font-size: calc(11px * var(--text-scale)); font-weight: 700; }
+.settlement-complete-state.large { min-height: 112px; }
+.settlement-complete-state > div { display: grid; gap: 4px; }
+.settlement-complete-state > div span { font-size: calc(9px * var(--text-scale)); font-weight: 500; }
+.private-settlement-summary { min-height: 80px; padding: 14px; border: 1px solid var(--border-soft); border-radius: 8px; display: flex; align-items: center; justify-content: space-between; gap: 14px; background: var(--surface-raised); }
+.private-settlement-summary > div { display: grid; gap: 3px; }
+.private-settlement-summary span { color: var(--text-muted); font-size: calc(9px * var(--text-scale)); }
+.private-settlement-summary strong { font-size: calc(24px * var(--text-scale)); }
+.private-settlement-summary p { max-width: 210px; margin: 0; color: var(--text-muted); font-size: calc(9px * var(--text-scale)); line-height: 1.5; text-align: right; }
+.private-expense-list { display: grid; gap: 10px; }
+.private-expense-card { border: 1px solid var(--border-soft); border-radius: 8px; background: var(--surface-raised); overflow: hidden; }
+.private-expense-card > header { min-height: 68px; padding: 12px 13px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.private-expense-card > header > div { min-width: 0; display: grid; gap: 4px; }
+.private-expense-card > header > div strong { overflow: hidden; text-overflow: ellipsis; font-size: calc(13px * var(--text-scale)); white-space: nowrap; }
+.private-expense-card > header span { color: var(--text-muted); font-size: calc(9px * var(--text-scale)); }
+.private-expense-card > header > strong { flex: 0 0 auto; font-size: calc(13px * var(--text-scale)); }
+.private-progress { height: 3px; background: var(--surface-subtle); }
+.private-progress span { height: 100%; display: block; background: var(--positive); transition: width .2s ease; }
+.private-share-list { border-top: 1px solid var(--border-soft); }
+.private-share-row { min-height: 59px; padding: 9px 11px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto minmax(168px, auto); align-items: center; gap: 9px; }
+.private-share-row + .private-share-row { border-top: 1px solid var(--border-soft); }
+.private-share-row > div { min-width: 0; display: grid; gap: 3px; }
+.private-share-row > div strong { overflow: hidden; text-overflow: ellipsis; font-size: calc(10px * var(--text-scale)); white-space: nowrap; }
+.private-share-row > div span { overflow: hidden; text-overflow: ellipsis; color: var(--text-muted); font-size: calc(8px * var(--text-scale)); white-space: nowrap; }
+.private-share-row > strong { font-size: calc(10px * var(--text-scale)); white-space: nowrap; }
+.receipt-toggle, .share-state { min-height: 30px; padding: 0 8px; border: 1px solid var(--border-soft); border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 4px; color: var(--text-muted); background: var(--surface-subtle); font-size: calc(8px * var(--text-scale)); font-weight: 700; white-space: nowrap; }
+.receipt-toggle.is-received, .share-state.is-done { border-color: color-mix(in srgb, var(--positive) 34%, var(--border)); color: var(--positive); background: var(--mint-soft); }
+.receipt-toggle:disabled { opacity: .7; cursor: default; }
+.private-obligation-confirmations { display: grid; grid-template-columns: repeat(2, minmax(78px, 1fr)); gap: 6px; }
+.private-expense-card > footer { min-height: 39px; padding: 8px 11px; border-top: 1px solid var(--border-soft); display: flex; align-items: center; justify-content: space-between; gap: 10px; color: var(--text-muted); background: var(--surface-subtle); font-size: calc(9px * var(--text-scale)); }
+.private-expense-card > footer small { overflow: hidden; text-overflow: ellipsis; font-size: calc(8px * var(--text-scale)); white-space: nowrap; }
+.private-expense-card.is-resolved { opacity: .8; }
+.resolved-expense-history { border-top: 1px solid var(--border-soft); padding-top: 12px; }
+.resolved-expense-history > summary { min-height: 40px; list-style: none; display: flex; align-items: center; justify-content: space-between; color: var(--text-muted); cursor: pointer; font-size: calc(10px * var(--text-scale)); font-weight: 700; }
+.resolved-expense-history > summary::-webkit-details-marker { display: none; }
+.resolved-expense-history > div { display: grid; gap: 9px; }
+
+@media (max-width: 390px) {
+  .dual-confirmation-grid { grid-template-columns: 1fr; }
+  .private-share-row { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .private-share-row .private-obligation-confirmations, .private-share-row .share-state { grid-column: 2 / 4; justify-self: stretch; }
+  .closeout-start-panel { align-items: stretch; flex-direction: column; }
+}
