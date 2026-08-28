@@ -16,8 +16,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@line/liff": "^2.29.2",
-    "@supabase/supabase-js": "^2.112.2",
+    "@line/liff": "^2.30.0",
+    "@supabase/supabase-js": "^2.112.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
